@@ -46,16 +46,16 @@ CONSTRAINT `employee_ibfk_1` FOREIGN KEY (`Depart_id`) REFERENCES `department`(`
 CONSTRAINT `employee_ibfk_2` FOREIGN KEY (`managesDepart_id`) REFERENCES `department`(`Depart_id`),
 CONSTRAINT `employee_ibfk_3` FOREIGN KEY (`jobtitle`) REFERENCES `job`(`Job_Title`));
 INSERT INTO `employee` (`Employee_id`, `Name`, `Address`, `Phone_no`, `Email`, `Start_date`, `dob`, `gender`, `loan`, `p_fund`, `jobtitle`, `Depart_id`, `managesDepart_id`, `bank_accno`) VALUES
-(1604023, 'Arun', 'Hyderabad', '9988776655', 'arun@gmail.com', '2018-10-10', '1996-02-29', 'male', 0, 2000, 'manager', 106, 106, 236954128),
-(1604025, 'Bhuvan', 'Chennai', '9977661230', 'bhuvan@gmail.com', '2018-12-18', '2000-01-01', 'male', 3610, 1500, 'executive', 104, null, 123654784),
-(1604026, 'Charan', 'Mumbai', '8809765432', 'charan026@gmail.com', '2018-08-14', '1996-07-11', 'male', 0, 1250, 'manager', 102, 102, 365488911),
-(1604027, 'David', 'Delhi', '6303453211', 'david4@gmail.com', '2018-11-01', '1998-09-11', 'male',4000, 750, 'executive', 103, null, 313515669),
-(1604045, 'Sohail', 'Rajasthan', '7654321231', 'sohail@gmail.com', '2019-01-18', '1997-10-25', 'male', 4512.5, 750, 'executive', 101, null, 125432874),
-(1604060, 'Prakhar', 'Pune', '8193264912', 'prakhar16@gmail.com', '2019-01-03', '1997-06-04', 'male', 0, 1250, 'manager', 101, 101, 154297830),
-(1604073, 'Naveen', 'Vellore', '9869803351', 'naveen007@gmail.com', '2018-09-11', '1997-01-25', 'male', 0, 1500, 'accountant', 105, null, 147483647),
-(1604078, 'Vinay', 'Madhya Pradesh', '9152140632', 'viany877@gmail.com', '2019-01-18', '1998-03-02', 'male', 0, 1750, 'chief', 101, null, 247483647),
-(1604083, 'Bishal', 'Delhi', '7474244680', 'bishal@gmail.com', '2014-06-02', '1997-11-14', 'male', 0, 750, 'executive', 105, null, 321569874),
-(1604110, 'Riya', 'Delhi', '7637100931', 'riya143@gmail.com', '2018-10-22', '1999-08-28', 'female', 0, 1250, 'director', 104, null, 497483647);
+(1604023, 'Adeola', 'Alakia', '09188776655', 'adeola@gmail.com', '2018-10-10', '1996-02-29', 'male', 0, 2000, 'manager', 106, 106, 236954128),
+(1604025, 'Ogunrinde', 'Olosa', '09077661230', 'ogunrinde@gmail.com', '2018-12-18', '2000-01-01', 'male', 3610, 1500, 'executive', 104, null, 123654784),
+(1604026, 'Vobat', 'Egbeda', '0809765432', 'vobat6@gmail.com', '2018-08-14', '1996-07-11', 'male', 0, 1250, 'manager', 102, 102, 365488911),
+(1604027, 'Dolapo', 'Moniya', '08063034531', 'Dollypee@gmail.com', '2018-11-01', '1998-09-11', 'male',4000, 750, 'executive', 103, null, 313515669),
+(1604045, 'Osho', 'Isebo', '7654321231', 'osho@gmail.com', '2019-01-18', '1997-10-25', 'male', 4512.5, 750, 'executive', 101, null, 125432874),
+(1604060, 'Monarch', 'Ajameta', '08193264912', 'monarch@gmail.com', '2019-01-03', '1997-06-04', 'male', 0, 1250, 'manager', 101, 101, 154297830),
+(1604073, 'Ifedayo', 'Old Ife rd', '09069803351', 'ifedayo@gmail.com', '2018-09-11', '1997-01-25', 'male', 0, 1500, 'accountant', 105, null, 147483647),
+(1604078, 'Jacob', 'Isebo', '09052140632', 'jacob@gmail.com', '2019-01-18', '1998-03-02', 'male', 0, 1750, 'chief', 101, null, 247483647),
+(1604083, 'Paul', 'Inyana Akonle', '07047424480', 'paul@gmail.com', '2014-06-02', '1997-11-14', 'male', 0, 750, 'executive', 105, null, 321569874),
+(1604110, 'Victoria', 'Onibata', '07037100931', 'victoria@gmail.com', '2018-10-22', '1999-08-28', 'female', 0, 1250, 'director', 104, null, 497483647);
 CREATE TABLE `payment` (
 `pay_no` int(11) unique,
 `emp_id` INT NOT NULL,
